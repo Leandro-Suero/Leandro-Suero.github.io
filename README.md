@@ -8,11 +8,13 @@ To re-build the CSS file if new tailwind classes are added or modifications to s
 
 ## Image Attribution:
 
-[Hero vector by freepik.com](https://www.freepik.com/free-vector/isometric-education-illustration_3940819.htm#page=1&query=isometric%20plane&position=1)
-Free for personal and commercial purpose with attribution
-[Programming Skills Background by Unsplash.com](https://unsplash.com/photos/YlVjrBkfXt8)
-[Libraries Skills Background by Unsplash.com](https://unsplash.com/photos/1emWndlDHs0)
-[Other Skills Background by Unsplash.com](https://unsplash.com/photos/a1xlQq3HoJ0)
+- [Hero vector by freepik.com](https://www.freepik.com/free-vector/isometric-education-illustration_3940819.htm#page=1&query=isometric%20plane&position=1)
+
+- [Programming Skills Background by Unsplash.com](https://unsplash.com/photos/YlVjrBkfXt8)
+
+- [Libraries Skills Background by Unsplash.com](https://unsplash.com/photos/1emWndlDHs0)
+
+- [Other Skills Background by Unsplash.com](https://unsplash.com/photos/a1xlQq3HoJ0)
 
 ## Other resources:
 
@@ -26,6 +28,7 @@ Free for personal and commercial purpose with attribution
 8. [Squoosh App](https://squoosh.app/) for image optimization/compression.
 9. [Remove BG](https://www.remove.bg/) for background erasing on my picture.
 10. [AdobeXD](https://www.adobe.com/la/products/xd.html) for prototyping of some sections and creation of vector images (branding).
+11. [Formspree](https://formspree.io/) for contact form handling.
 
 ## Portfolio Projects
 
