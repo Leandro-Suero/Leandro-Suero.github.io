@@ -29,6 +29,7 @@ To re-build the CSS file if new tailwind classes are added or modifications to s
 9. [Remove BG](https://www.remove.bg/) for background erasing on my picture.
 10. [AdobeXD](https://www.adobe.com/la/products/xd.html) for prototyping of some sections and creation of vector images (branding).
 11. [Formspree](https://formspree.io/) for contact form handling.
+12. [GSAP](https://greensock.com/gsap/) for animations.
 
 ## Portfolio Projects
 
