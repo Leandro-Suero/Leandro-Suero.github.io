@@ -8,7 +8,7 @@ To re-build the CSS file if new tailwind classes are added or modifications to s
 
 ## Image Attribution:
 
-- [Hero vector by freepik.com](https://www.freepik.com/free-vector/isometric-education-illustration_3940819.htm#page=1&query=isometric%20plane&position=1)
+- [Hero vector by freepik.com](https://www.freepik.com/free-vector/portrait-programmer-working-with-pc_4956907.htm)
 
 - [Programming Skills Background by Unsplash.com](https://unsplash.com/photos/YlVjrBkfXt8)
 
