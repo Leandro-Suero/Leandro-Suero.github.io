@@ -65,6 +65,11 @@ function check(e) {
       // click both outside link and outside menu, hide menu
       navMenuDiv.classList.add("hidden");
     }
+  } else {
+    //click on link from menu, hide menu
+    if (target.tagName.toLowerCase() === "a") {
+      navMenuDiv.classList.add("hidden");
+    }
   }
 }
 function checkParent(t, elm) {
