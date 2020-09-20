@@ -19,3 +19,9 @@ html {
     scroll-behavior: auto;
   }
 }
+#skills,
+#contact,
+#portfolio,
+#about {
+  scroll-margin-top: 2rem;
+}

@@ -21517,6 +21517,8 @@ video {
   background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
 }
 
+/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
@@ -21525,6 +21527,13 @@ html {
   html {
     scroll-behavior: auto;
   }
+}
+
+#skills,
+#contact,
+#portfolio,
+#about {
+  scroll-margin-top: 2rem;
 }
 
 @media (min-width: 640px) {
