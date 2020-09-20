@@ -60,7 +60,7 @@ tl.to("#layerPopups > *", {
   ease: "elastic.out(1, 0.5)",
   rotate: gsap.utils.random(-45, 45, 5, true),
   transformOrigin: "center",
-  repeat: -1,
+  // repeat: -1,
 });
 
 /*================= SCROLL ANIMATIONS =================*/
@@ -71,59 +71,6 @@ ScrollTrigger.defaults({
 ScrollTrigger.matchMedia({
   /***************** DESKTOP SCROLL ANIMATIONS *****************/
   "(min-width: 768px)": function () {
-    /* SKILLS SECTION ANIMATION */
-    gsap.from("#skills .card", {
-      scrollTrigger: {
-        trigger: ".card",
-        start: "top 80%",
-        end: "top 80%",
-      },
-      scaleX: 0.5,
-      opacity: 0,
-      transformOrigin: "center",
-      duration: 0.4,
-      ease: "power2",
-    });
-    // gsap.from("#skills #programming img", {
-    //   scrollTrigger: {
-    //     trigger: "#skills .card",
-    //     start: "top 80%",
-    //     end: "top 80%",
-    //   },
-    //   delay: 2,
-    //   y: 50,
-    //   opacity: 0,
-    //   stagger: 0.1,
-    //   duration: 0.3,
-    //   ease: "power2",
-    // });
-    // gsap.from("#skills #frameworks img", {
-    //   scrollTrigger: {
-    //     trigger: "#skills h2",
-    //     start: "top 80%",
-    //     end: "top 80%",
-    //   },
-    //   delay: 0.5,
-    //   y: 50,
-    //   opacity: 0,
-    //   stagger: 0.1,
-    //   duration: 0.3,
-    //   ease: "power2",
-    // });
-    // gsap.from("#skills #other img", {
-    //   scrollTrigger: {
-    //     trigger: "#skills h2",
-    //     start: "top 80%",
-    //     end: "top 80%",
-    //   },
-    //   delay: 0.5,
-    //   y: 50,
-    //   opacity: 0,
-    //   stagger: 0.1,
-    //   duration: 0.3,
-    //   ease: "power2",
-    // });
-
     /* PORTFOLIO SECTION ANIMATION */
     gsap.from("#proyect1 .left-col", {
       scrollTrigger: {
@@ -174,44 +121,6 @@ ScrollTrigger.matchMedia({
   },
   /***************** MOBILE SCROLL ANIMATIONS *****************/
   "(max-width: 767px)": function () {
-    /* SKILLS SECTION ANIMATION */
-    gsap.from("#skills #card-programming", {
-      scrollTrigger: {
-        trigger: "#card-programming",
-        start: "top 80%",
-        end: "top 80%",
-      },
-      scaleX: 0.5,
-      opacity: 0,
-      transformOrigin: "center",
-      duration: 0.4,
-      ease: "power2",
-    });
-    gsap.from("#skills #card-frameworks", {
-      scrollTrigger: {
-        trigger: "#card-frameworks",
-        start: "top 80%",
-        end: "top 80%",
-      },
-      scaleX: 0.5,
-      opacity: 0,
-      transformOrigin: "center",
-      duration: 0.4,
-      ease: "power2",
-    });
-    gsap.from("#skills #card-other", {
-      scrollTrigger: {
-        trigger: "#card-other",
-        start: "top 80%",
-        end: "top 80%",
-      },
-      scaleX: 0.5,
-      opacity: 0,
-      transformOrigin: "center",
-      duration: 0.4,
-      ease: "power2",
-    });
-
     /* PORTFOLIO SECTION ANIMATION */
     gsap.from("#proyect1 .right-col img", {
       scrollTrigger: {
@@ -263,6 +172,36 @@ ScrollTrigger.matchMedia({
 
   /***************** GENERAL SCROLL ANIMATIONS *****************/
   all: function () {
+    /* SKILLS SECTION ANIMATION */
+    const cards = gsap.utils.toArray("#skills .card");
+    cards.forEach((card) => {
+      gsap.from(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+          end: "top 80%",
+        },
+        scaleX: 0.5,
+        opacity: 0,
+        transformOrigin: "center",
+        duration: 0.4,
+        ease: "power2",
+      });
+      //animate their inner badges too
+      let img_badges = card.querySelectorAll("img");
+      gsap.from(img_badges, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+          end: "top 80%",
+        },
+        y: 50,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.5,
+        ease: "power2",
+      });
+    });
     /* ABOUT SECTION ANIMATION */
     gsap.from("#about .right-col a", {
       scrollTrigger: {
