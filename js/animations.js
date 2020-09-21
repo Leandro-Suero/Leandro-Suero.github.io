@@ -22,14 +22,14 @@ popupsTL.to("#layerPopups > *", {
 });
 //onLoad animation
 let heroTL = gsap.timeline({ delay: 0.2, onComplete: () => popupsTL.play() });
-heroTL.from("#hero > p", {
+heroTL.from("#hero p", {
   duration: 0.3,
   opacity: 0,
   x: -200,
   ease: "power4.in",
   stagger: 0.1,
 });
-heroTL.from("#hero > h1", {
+heroTL.from("#hero h1", {
   duration: 0.3,
   opacity: 0,
   x: -200,
@@ -218,7 +218,7 @@ ScrollTrigger.matchMedia({
       opacity: 0,
       transformOrigin: "center",
       duration: 0.3,
-      ease: "back",
+      ease: "power2",
     });
     /* PORTFOLIO SECTION ANIMATION */
     gsap.from("#proyect1 .left-col a", {
@@ -231,7 +231,7 @@ ScrollTrigger.matchMedia({
       opacity: 0,
       transformOrigin: "center",
       duration: 0.3,
-      ease: "back",
+      ease: "power2",
     });
     /* CONTACT SECTION ANIMATION */
     gsap.from("#contact form > *", {
