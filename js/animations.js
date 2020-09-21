@@ -253,7 +253,6 @@ ScrollTrigger.matchMedia({
         trigger: "#hero-svg",
         start: "top center", //not used
         end: "bottom top",
-        markers: true,
         onLeave: () => popupsTL.pause(),
         onEnterBack: () => popupsTL.play(),
       },
