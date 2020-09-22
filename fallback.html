@@ -19,14 +19,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden w-screen leading-normal tracking-normal text-white gradient"
+<body class="overflow-x-hidden w-screen leading-normal tracking-normal text-white gradient min-h-screen"
 	style="font-family: 'Source Sans Pro', sans-serif;">
 
 	<!--Nav-->
 	<nav id="header" class="fixed overflow-x-hidden w-screen z-30 top-0 text-white">
 		<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 			<div class="pl-4 flex items-center">
-				<a href="#" class="toggleColour no-underline hover:no-underline font text-2xl lg:text-4xl">
+				<a href="/" class="toggleColour no-underline hover:no-underline font text-2xl lg:text-4xl">
 					<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 297 40">
 						<text id="brand" transform="translate(0 33)" font-family="Consolas" fill="currentColor">
 							<tspan x="0" y="-5">{leandro.suero}</tspan>
@@ -34,57 +34,19 @@
 					</svg>
 				</a>
 			</div>
-			<!-- #hamburger/menu -->
-			<div class="block lg:hidden pr-4">
-				<button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
-					<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-						<title>Menu</title>
-						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-					</svg>
-				</button>
-			</div>
-			<!-- right side nav -->
-			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block lg:mt-0 bg-white lg:bg-transparent text-black text-center p-4 lg:p-0 z-20"
-				id="nav-content">
-				<ul class="list-reset lg:flex justify-end flex-1 items-center text-center">
-					<li class="mr-3">
-						<a class="inline-block text-gray-800 font-semibold no-underline hover:underline hover:text-black py-2 px-4"
-							href="#skills">Skills</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block text-gray-800 font-semibold no-underline hover:underline hover:text-black py-2 px-4"
-							href="#portfolio">Portfolio</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block text-gray-800 font-semibold no-underline hover:underline hover:text-black py-2 px-4"
-							href="#about">About me</a>
-					</li>
-				</ul>
-				<a href="#contact" id="navAction"
-					class="uppercase mr-3 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-semibold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75 text-center">
-					Contact</a>
-			</div>
 		</div>
-
 		<hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
 	</nav>
 
 	<!--Hero-->
-	<div id="hero"
-		class="container pt-24 px-3 pb-8 mx-auto items-center grid grid-cols-1 md:grid-cols-2 md:grid-rows-2">
-		<!--Hero Text Col-->
-		<div class="flex flex-col w-full h-full justify-around items-center text-center md:text-left">
-			<p class="uppercase tracking-loose md:text-lg w-full">Informatics Engineer</p>
-			<h1 class="text-5xl md:text-6xl font-bold leading-tight">Fullstack Web Developer</h1>
-		</div>
+	<div id="hero" class="container pt-24 px-3 pb-8 mx-auto items-center flex flex-col">
 
-		<!--Hero Image Col-->
-		<div class="w-full md:row-span-2 py-6 flex justify-center">
-			<svg class="w-full md:w-4/5" xmlns:dc="http://purl.org/dc/elements/1.1/"
-				xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-				xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 211.66664 205.05208" version="1.1"
-				id="hero-svg">
+		<div class="w-full flex justify-center">
+			<h1 class="text-5xl md:text-6xl font-bold leading-tight">Resource not available Offline</h1>
+			<svg class="w-full md:w-4/5" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+				xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 211.66664 205.05208"
+				version="1.1" id="hero-svg">
 				<defs id="defs13091">
 					<linearGradient y2="242.24951" x2="336.96136" y1="136.93764" x1="184.70497" id="gradient-blue"
 						gradientTransform="matrix(0.52194346,0.09128721,-0.1313808,0.57424869,0.1298763,-20.936562)"
@@ -153,8 +115,8 @@
 					<path style="fill:url(#linearGradient15553);fill-opacity:1;stroke-width:0.52931184"
 						d="M 185.77573,254.18473 Q 153.12868,288.89725 112.25149,292.16335 71.374274,295.42946 37.197757,278.74974 3.0212261,262.07001 5.6136329,224.2483 q 2.592402,-37.82171 16.1880211,-77.41361 13.595617,-39.5919 58.007223,-49.30212 44.411593,-9.710226 70.218463,19.65324 25.80691,29.36347 47.10118,65.82494 21.29429,36.46149 -11.35279,71.17398 z"
 						id="blob-6" />
-					<g id="g4574" transform="matrix(0.35277777,0,0,-0.35277777,185.63991,249.84806)"
-						style="fill:#803300" clip-path="url(#clipPath8259)">
+					<g id="g4574" transform="matrix(0.35277777,0,0,-0.35277777,185.63991,249.84806)" style="fill:#803300"
+						clip-path="url(#clipPath8259)">
 						<path
 							d="M 0,0 C -56.374,9.492 -146.963,15.65 -249.126,15.65 -351.289,15.65 -441.878,9.492 -498.252,0 V -45.701 -81.264 H 0.385 V 0 Z"
 							style="fill:#803300;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4576" />
@@ -283,8 +245,7 @@
 						</g>
 					</g>
 					<path d="m 59.40783,231.10512 h 56.12696 V 193.05803 H 59.40783 Z"
-						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-						id="path4718-3" />
+						style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775" id="path4718-3" />
 					<g transform="matrix(0.35277777,0,0,-0.35277777,8.3044373,288.05933)" id="g4720-4">
 						<g id="g4722-7" />
 						<g id="g4818-4">
@@ -403,8 +364,7 @@
 								<g transform="translate(68.3759,90.5024)" id="g4830">
 									<path
 										d="m 0,0 c 0,-3.125 9.094,-5.658 20.312,-5.658 11.219,0 20.313,2.533 20.313,5.658 0,3.124 -9.094,5.657 -20.313,5.657 C 9.094,5.657 0,3.124 0,0"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path4828" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4828" />
 								</g>
 							</g>
 						</g>
@@ -451,8 +411,7 @@
 								<g transform="translate(472.8843,97.8389)" id="g4874">
 									<path
 										d="m 0,0 c 0,-4.232 -12.446,-7.663 -27.799,-7.663 -15.354,0 -27.8,3.431 -27.8,7.663 0,4.232 12.446,7.663 27.8,7.663 C -12.446,7.663 0,4.232 0,0"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path4872" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4872" />
 								</g>
 							</g>
 						</g>
@@ -469,8 +428,7 @@
 								<g transform="translate(417.087,177.2707)" id="g4894">
 									<path
 										d="m 0,0 c -1.994,-2.531 -5.661,-2.966 -8.192,-0.973 -2.531,1.994 -2.966,5.661 -0.973,8.192 L 3.086,22.771 c 1.993,2.531 5.661,2.966 8.192,0.973 2.531,-1.994 2.966,-5.661 0.973,-8.192 z"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path4892" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4892" />
 								</g>
 							</g>
 						</g>
@@ -487,8 +445,7 @@
 								<g transform="translate(446.7178,112.9828)" id="g4914">
 									<path
 										d="m 0,0 c 7.326,-3.881 12.357,-10.077 12.219,-14.207 -0.12,-3.591 -3.879,-5.84 -9.613,-7.023 9.961,0.373 17.329,2.365 17.473,6.646 C 20.234,-9.952 11.294,-2.2 0,0"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path4912" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4912" />
 								</g>
 							</g>
 						</g>
@@ -525,8 +482,7 @@
 								<g transform="translate(418.7518,188.4708)" id="g4950">
 									<path
 										d="m 0,0 c -0.194,0.14 -0.4,0.25 -0.598,0.381 4.849,-7.311 4.636,-17.727 -1.274,-25.946 -0.577,-0.802 -1.195,-1.555 -1.842,-2.267 l -27.633,19.87 c -0.216,-0.348 -0.427,-0.698 -0.625,-1.052 L 1.632,-33.178 c 0.647,0.712 1.265,1.464 1.842,2.267 C 10.912,-20.567 9.357,-6.728 0,0"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path4948" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4948" />
 								</g>
 							</g>
 						</g>
@@ -584,8 +540,7 @@
 								<g transform="translate(362.9978,115.1925)" id="g5014">
 									<path
 										d="m 0,0 c -5.346,0 -33.049,-10.804 -33.049,-10.804 0,0 -0.683,2.237 -1.9,5.94 -0.016,-0.006 -0.043,-0.016 -0.043,-0.016 0,0 -16.056,46.379 -31.058,66.636 -0.141,0.147 -0.283,0.299 -0.424,0.44 -16.039,16.038 -67.895,11.227 -92.487,6.95 -15.598,-2.712 -25.944,-23.424 -30.815,-73.11 -6.548,3.411 -17.023,7.882 -24.878,10.385 -9.812,-3.759 -7.176,-16.54 -7.176,-16.54 0,0 19.307,-14.423 26.791,-16.561 4.576,-1.308 16.4,-16.724 24.843,38.481 -0.492,-13.153 -6.495,-39.618 -1.12,-68.537 l 104.783,-9.623 c 0,0 -3.633,38.364 -4.942,67.769 8.398,-8.998 17.838,-33.193 27.278,-33.773 7.769,-0.478 38.792,9.125 46.277,13.402 4.98,2.846 3.094,12.313 -0.3,18.334 C 1.171,-0.23 0.57,0 0,0"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path5012" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5012" />
 								</g>
 							</g>
 						</g>
@@ -607,8 +562,7 @@
 								<g transform="translate(290.0493,10.0193)" id="g5038">
 									<path
 										d="m 0,0 c 0,-5.851 -4.317,-10.595 -9.642,-10.595 h -97.577 c -5.325,0 -9.642,4.744 -9.642,10.595 v 16.544 c 0,5.851 4.317,10.595 9.642,10.595 H -9.642 C -4.317,27.139 0,22.395 0,16.544 Z"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path5036" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5036" />
 								</g>
 							</g>
 						</g>
@@ -625,15 +579,13 @@
 								<g transform="translate(279.9174,83.8676)" id="g5058">
 									<path
 										d="m 0,0 c 0,-4.897 -3.97,-8.867 -8.867,-8.867 h -81.578 c -4.897,0 -8.867,3.97 -8.867,8.867 v 63.958 c 0,4.897 3.97,8.867 8.867,8.867 H -8.867 C -3.97,72.825 0,68.855 0,63.958 Z"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path5056" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5056" />
 								</g>
 							</g>
 						</g>
 					</g>
 					<g id="g5064" transform="matrix(0.35277777,0,0,-0.35440995,92.011349,287.85277)">
-						<path
-							d="m 0,0 v 106.957 c 0,5.159 -4.182,9.342 -9.341,9.342 -5.159,0 -9.341,-4.183 -9.341,-9.342 V 0 Z"
+						<path d="m 0,0 v 106.957 c 0,5.159 -4.182,9.342 -9.341,9.342 -5.159,0 -9.341,-4.183 -9.341,-9.342 V 0 Z"
 							style="fill:#6a7a8b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5066" />
 					</g>
 					<g transform="matrix(0.35277777,0,0,-0.35436974,6.7426187,287.8466)" id="g5068">
@@ -643,8 +595,7 @@
 								<g transform="translate(237.3666)" id="g5078">
 									<path
 										d="m 0,0 h 4.34 v 106.957 c 0,3.702 -2.158,6.89 -5.279,8.402 C -0.344,114.13 0,112.755 0,111.298 Z"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path5076" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5076" />
 								</g>
 							</g>
 						</g>
@@ -655,22 +606,18 @@
 							d="M 0,0 C -0.353,0.355 -0.712,0.691 -1.086,0.981 -1.272,1.125 -1.456,1.266 -1.649,1.372 -1.837,1.479 -2.034,1.572 -2.2,1.604 -2.371,1.658 -2.508,1.631 -2.589,1.583 -2.637,1.586 -2.67,1.509 -2.709,1.486 -2.748,1.475 -2.79,1.385 -2.832,1.335 -2.877,1.288 -2.921,1.224 -2.956,1.128 l -0.118,-0.246 -0.18,-0.594 0.04,0.174 C -3.295,-0.96 -3.377,-2.382 -3.549,-3.793 -3.703,-5.206 -3.92,-6.613 -4.168,-8.016 l -0.615,0.907 c 0.305,-0.097 0.544,-0.212 0.805,-0.34 0.255,-0.13 0.505,-0.276 0.75,-0.437 0.243,-0.167 0.486,-0.355 0.703,-0.585 0.106,-0.131 0.211,-0.257 0.306,-0.394 0.083,-0.163 0.177,-0.308 0.229,-0.487 0.033,-0.188 0.108,-0.367 0.074,-0.557 -0.026,-0.185 -0.033,-0.382 -0.126,-0.524 -0.082,-0.146 -0.142,-0.316 -0.251,-0.421 l -0.308,-0.325 c -0.104,-0.101 -0.232,-0.163 -0.345,-0.244 -0.118,-0.072 -0.226,-0.156 -0.348,-0.215 -0.245,-0.113 -0.496,-0.211 -0.735,-0.311 0.359,0.392 0.705,0.773 0.945,1.18 l 0.142,0.3 c 0.055,0.096 0.034,0.195 0.059,0.281 0.036,0.09 -0.027,0.163 -0.024,0.231 0.008,0.071 -0.073,0.128 -0.087,0.189 -0.037,0.06 -0.114,0.117 -0.157,0.177 l -0.223,0.166 c -0.177,0.1 -0.354,0.207 -0.558,0.295 -0.206,0.087 -0.419,0.164 -0.639,0.231 -0.218,0.06 -0.46,0.125 -0.65,0.168 l -0.656,0.148 0.041,0.759 c 0.076,1.422 0.184,2.841 0.354,4.253 0.152,1.413 0.394,2.817 0.638,4.22 l 0.025,0.146 0.014,0.028 c 0.129,0.256 0.252,0.506 0.389,0.754 0.201,0.253 0.308,0.503 0.604,0.733 0.139,0.11 0.239,0.236 0.437,0.307 0.183,0.072 0.348,0.169 0.553,0.166 0.199,0.016 0.394,0.026 0.562,-0.035 C -2.082,2.707 -1.92,2.65 -1.791,2.565 -1.501,2.42 -1.3,2.215 -1.115,2.014 -0.928,1.812 -0.776,1.598 -0.634,1.382 -0.361,0.941 -0.152,0.479 0,0"
 							style="fill:#ffc2ad;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path4982" />
 					</g>
-					<g id="g5064-9"
-						transform="matrix(-0.32102202,-1.0174879e-4,-2.2539883e-5,0.07111435,92.011465,287.84535)">
-						<path
-							d="m 0,0 v 106.957 c 0,5.159 -4.182,9.342 -9.341,9.342 -5.159,0 -9.341,-4.183 -9.341,-9.342 V 0 Z"
+					<g id="g5064-9" transform="matrix(-0.32102202,-1.0174879e-4,-2.2539883e-5,0.07111435,92.011465,287.84535)">
+						<path d="m 0,0 v 106.957 c 0,5.159 -4.182,9.342 -9.341,9.342 -5.159,0 -9.341,-4.183 -9.341,-9.342 V 0 Z"
 							style="fill:#6a7a8b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5066-6" />
 					</g>
-					<g transform="matrix(-0.32102202,-1.0174879e-4,-2.2537325e-5,0.07110628,169.6046,287.87119)"
-						id="g5068-0">
+					<g transform="matrix(-0.32102202,-1.0174879e-4,-2.2537325e-5,0.07110628,169.6046,287.87119)" id="g5068-0">
 						<g id="g5070-6" />
 						<g id="g5082-7">
 							<g clip-path="url(#clipPath5074-7)" id="g5080-9" style="opacity:0.19999701">
 								<g transform="translate(237.3666)" id="g5078-5">
 									<path
 										d="m 0,0 h 4.34 v 106.957 c 0,3.702 -2.158,6.89 -5.279,8.402 C -0.344,114.13 0,112.755 0,111.298 Z"
-										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none"
-										id="path5076-6" />
+										style="fill:#000e23;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5076-6" />
 								</g>
 							</g>
 						</g>
@@ -682,196 +629,164 @@
 				</g>
 				<g id="layerPopups" style="display:inline" transform="translate(0,-91.947959)">
 					<g id="g409">
-						<g style="display:inline" id="g5124"
-							transform="matrix(0.35277777,0,0,-0.35277777,104.60254,135.88591)">
+						<g style="display:inline" id="g5124" transform="matrix(0.35277777,0,0,-0.35277777,104.60254,135.88591)">
 							<path
 								d="m 0,0 c 0,-15.314 12.414,-27.728 27.728,-27.728 15.314,0 27.728,12.414 27.728,27.728 0,15.314 -12.414,27.728 -27.728,27.728 C 12.414,27.728 0,15.314 0,0"
 								style="fill:#6f79ca;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5126" />
 						</g>
-						<g style="display:inline" id="g5128"
-							transform="matrix(0.35277777,0,0,-0.35277777,102.51332,135.88591)">
+						<g style="display:inline" id="g5128" transform="matrix(0.35277777,0,0,-0.35277777,102.51332,135.88591)">
 							<path
 								d="m 0,0 c 0,-15.314 12.414,-27.728 27.728,-27.728 15.314,0 27.728,12.414 27.728,27.728 0,15.314 -12.414,27.728 -27.728,27.728 C 12.414,27.728 0,15.314 0,0"
 								style="fill:#888df4;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5130" />
 						</g>
-						<g style="display:inline" id="g5132"
-							transform="matrix(0.35277777,0,0,-0.35277777,107.58235,134.02762)">
+						<g style="display:inline" id="g5132" transform="matrix(0.35277777,0,0,-0.35277777,107.58235,134.02762)">
 							<path
 								d="m 0,0 c -1.174,0 -2.089,-0.481 -2.746,-1.442 -0.658,-0.961 -0.987,-2.286 -0.987,-3.976 0,-3.512 1.336,-5.268 4.008,-5.268 0.807,0 1.589,0.113 2.346,0.337 0.758,0.225 1.519,0.495 2.285,0.812 v -4.17 c -1.523,-0.674 -3.246,-1.011 -5.168,-1.011 -2.755,0 -4.867,0.799 -6.336,2.397 -1.468,1.598 -2.203,3.907 -2.203,6.928 0,1.889 0.356,3.55 1.067,4.981 0.712,1.432 1.736,2.532 3.071,3.302 1.336,0.77 2.907,1.155 4.713,1.155 1.972,0 3.857,-0.429 5.655,-1.286 L 4.194,-1.124 C 3.52,-0.807 2.846,-0.541 2.172,-0.325 1.498,-0.108 0.774,0 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5134" />
 						</g>
-						<g style="display:inline" id="g5136"
-							transform="matrix(0.35277777,0,0,-0.35277777,114.77824,137.17637)">
+						<g style="display:inline" id="g5136" transform="matrix(0.35277777,0,0,-0.35277777,114.77824,137.17637)">
 							<path
 								d="m 0,0 c 0,-1.132 -0.287,-2.137 -0.861,-3.015 -0.575,-0.878 -1.403,-1.56 -2.485,-2.047 -1.082,-0.487 -2.351,-0.73 -3.807,-0.73 -1.215,0 -2.235,0.085 -3.058,0.256 -0.824,0.17 -1.682,0.468 -2.572,0.892 v 4.394 c 0.94,-0.482 1.918,-0.859 2.934,-1.129 1.015,-0.271 1.947,-0.406 2.796,-0.406 0.732,0 1.269,0.127 1.61,0.381 0.341,0.253 0.512,0.58 0.512,0.98 0,0.249 -0.069,0.468 -0.206,0.655 -0.137,0.187 -0.358,0.376 -0.662,0.568 -0.303,0.191 -1.113,0.583 -2.428,1.173 -1.19,0.541 -2.082,1.066 -2.677,1.573 -0.595,0.508 -1.036,1.09 -1.324,1.748 -0.287,0.657 -0.43,1.435 -0.43,2.334 0,1.681 0.611,2.992 1.835,3.933 1.223,0.94 2.904,1.41 5.043,1.41 1.889,0 3.816,-0.437 5.78,-1.311 L -1.51,7.852 c -1.707,0.782 -3.18,1.173 -4.42,1.173 -0.64,0 -1.106,-0.112 -1.398,-0.337 -0.291,-0.224 -0.437,-0.503 -0.437,-0.836 0,-0.358 0.186,-0.678 0.556,-0.961 0.37,-0.283 1.375,-0.799 3.015,-1.548 C -2.622,4.635 -1.529,3.876 -0.918,3.065 -0.306,2.253 0,1.232 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5138" />
 						</g>
-						<g style="display:inline" id="g5140"
-							transform="matrix(0.35277777,0,0,-0.35277777,119.98358,137.17637)">
+						<g style="display:inline" id="g5140" transform="matrix(0.35277777,0,0,-0.35277777,119.98358,137.17637)">
 							<path
 								d="m 0,0 c 0,-1.132 -0.287,-2.137 -0.861,-3.015 -0.575,-0.878 -1.403,-1.56 -2.484,-2.047 -1.082,-0.487 -2.352,-0.73 -3.808,-0.73 -1.215,0 -2.234,0.085 -3.058,0.256 -0.824,0.17 -1.681,0.468 -2.572,0.892 v 4.394 c 0.94,-0.482 1.918,-0.859 2.934,-1.129 1.015,-0.271 1.947,-0.406 2.796,-0.406 0.732,0 1.269,0.127 1.61,0.381 0.341,0.253 0.512,0.58 0.512,0.98 0,0.249 -0.069,0.468 -0.206,0.655 -0.137,0.187 -0.358,0.376 -0.661,0.568 -0.304,0.191 -1.114,0.583 -2.429,1.173 -1.19,0.541 -2.082,1.066 -2.677,1.573 -0.595,0.508 -1.036,1.09 -1.323,1.748 -0.288,0.657 -0.431,1.435 -0.431,2.334 0,1.681 0.612,2.992 1.835,3.933 1.223,0.94 2.904,1.41 5.043,1.41 1.889,0 3.816,-0.437 5.78,-1.311 L -1.51,7.852 c -1.707,0.782 -3.18,1.173 -4.42,1.173 -0.64,0 -1.106,-0.112 -1.398,-0.337 -0.291,-0.224 -0.437,-0.503 -0.437,-0.836 0,-0.358 0.186,-0.678 0.556,-0.961 0.37,-0.283 1.375,-0.799 3.015,-1.548 C -2.621,4.635 -1.529,3.876 -0.917,3.065 -0.306,2.253 0,1.232 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5142" />
 						</g>
 					</g>
 					<g id="g453">
-						<g style="display:inline" id="g5144"
-							transform="matrix(0.35277777,0,0,-0.35277777,53.75933,155.50893)">
+						<g style="display:inline" id="g5144" transform="matrix(0.35277777,0,0,-0.35277777,53.75933,155.50893)">
 							<path
 								d="M 0,0 C 0,20.629 -16.723,37.351 -37.351,37.351 -57.98,37.351 -74.702,20.629 -74.702,0 c 0,-20.629 16.722,-37.351 37.351,-37.351 5.065,0 9.893,1.013 14.297,2.84 l 4.556,-10.75 h 6.194 v 17.555 C -4.748,-20.871 0,-10.991 0,0"
 								style="fill:#6f79ca;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5146" />
 						</g>
-						<g style="display:inline" id="g5148"
-							transform="matrix(0.35277777,0,0,-0.35277777,51.574087,155.50893)">
+						<g style="display:inline" id="g5148" transform="matrix(0.35277777,0,0,-0.35277777,51.574087,155.50893)">
 							<path
 								d="M 0,0 C 0,20.629 -16.723,37.351 -37.351,37.351 -57.98,37.351 -74.702,20.629 -74.702,0 c 0,-20.629 16.722,-37.351 37.351,-37.351 5.065,0 9.893,1.013 14.297,2.84 l 10.75,-10.75 v 17.555 C -4.748,-20.871 0,-10.991 0,0"
 								style="fill:#888df4;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5150" />
 						</g>
-						<g style="display:inline" id="g5152"
-							transform="matrix(0.35277777,0,0,-0.35277777,33.737394,161.87727)">
+						<g style="display:inline" id="g5152" transform="matrix(0.35277777,0,0,-0.35277777,33.737394,161.87727)">
 							<path
 								d="m 0,0 c -1.457,0 -2.84,0.142 -4.149,0.425 v 6.213 c 0.432,-0.081 0.891,-0.172 1.376,-0.273 0.486,-0.101 1.012,-0.152 1.579,-0.152 1.322,0 2.267,0.398 2.833,1.194 0.567,0.796 0.85,2.159 0.85,4.088 v 27.383 h 8.035 V 12.184 C 10.524,8.176 9.647,5.144 7.893,3.086 6.139,1.029 3.508,0 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5154" />
 						</g>
-						<g style="display:inline" id="g5156"
-							transform="matrix(0.35277777,0,0,-0.35277777,45.789237,156.11553)">
+						<g style="display:inline" id="g5156" transform="matrix(0.35277777,0,0,-0.35277777,45.789237,156.11553)">
 							<path
 								d="m 0,0 c 0,-2.456 -0.836,-4.311 -2.51,-5.566 -1.673,-1.254 -4.074,-1.882 -7.204,-1.882 -1.7,0 -3.178,0.091 -4.433,0.273 -1.254,0.183 -2.536,0.517 -3.845,1.002 v 6.335 c 1.228,-0.54 2.574,-0.985 4.038,-1.336 1.463,-0.351 2.769,-0.526 3.916,-0.526 1.713,0 2.57,0.391 2.57,1.174 0,0.405 -0.239,0.765 -0.718,1.083 -0.479,0.317 -1.873,0.934 -4.18,1.851 -2.105,0.864 -3.575,1.845 -4.412,2.945 -0.836,1.1 -1.254,2.493 -1.254,4.179 0,2.132 0.823,3.792 2.469,4.979 1.646,1.187 3.973,1.781 6.982,1.781 1.511,0 2.931,-0.165 4.26,-0.496 1.329,-0.33 2.709,-0.813 4.139,-1.447 l -2.145,-5.1 c -1.053,0.472 -2.166,0.874 -3.34,1.204 -1.174,0.331 -2.132,0.496 -2.874,0.496 -1.295,0 -1.943,-0.317 -1.943,-0.951 0,-0.391 0.226,-0.725 0.678,-1.002 0.452,-0.277 1.758,-0.84 3.917,-1.69 1.605,-0.661 2.803,-1.309 3.592,-1.943 0.789,-0.634 1.369,-1.379 1.74,-2.236 C -0.185,2.27 0,1.228 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5158" />
 						</g>
 					</g>
 					<g id="g443">
-						<g style="display:inline" id="g5160"
-							transform="matrix(0.35277777,0,0,-0.35277777,65.886877,108.40922)">
+						<g style="display:inline" id="g5160" transform="matrix(0.35277777,0,0,-0.35277777,65.886877,108.40922)">
 							<path
 								d="m 0,0 h -55.084 c -4.314,0 -7.811,-3.497 -7.811,-7.811 v -55.084 c 0,-4.314 3.497,-7.811 7.811,-7.811 h 32.388 l 12.671,-15.288 h 5.096 v 15.288 H 0 c 4.314,0 7.811,3.497 7.811,7.811 V -7.811 C 7.811,-3.497 4.314,0 0,0"
 								style="fill:#2a2a5a;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5162" />
 						</g>
-						<g style="display:inline" id="g5164"
-							transform="matrix(0.35277777,0,0,-0.35277777,64.089155,108.40922)">
+						<g style="display:inline" id="g5164" transform="matrix(0.35277777,0,0,-0.35277777,64.089155,108.40922)">
 							<path
 								d="m 0,0 h -55.084 c -4.314,0 -7.811,-3.497 -7.811,-7.811 v -55.084 c 0,-4.314 3.497,-7.811 7.811,-7.811 h 32.388 l 17.767,-15.288 v 15.288 H 0 c 4.314,0 7.811,3.497 7.811,7.811 V -7.811 C 7.811,-3.497 4.314,0 0,0"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5166" />
 						</g>
-						<g style="display:inline" id="g5168"
-							transform="matrix(0.35277777,0,0,-0.35277777,51.767581,124.03992)">
+						<g style="display:inline" id="g5168" transform="matrix(0.35277777,0,0,-0.35277777,51.767581,124.03992)">
 							<path d="m 0,0 -18.28,8.118 v 3.11 L 0,20.378 V 15.007 L -11.21,9.89 0,5.334 Z"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5170" />
 						</g>
-						<g style="display:inline" id="g5172"
-							transform="matrix(0.35277777,0,0,-0.35277777,57.999542,115.71577)">
+						<g style="display:inline" id="g5172" transform="matrix(0.35277777,0,0,-0.35277777,57.999542,115.71577)">
 							<path d="M 0,0 -9.854,-27.176 H -16.11 L -6.256,0 Z"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5174" />
 						</g>
-						<g style="display:inline" id="g5176"
-							transform="matrix(0.35277777,0,0,-0.35277777,58.484293,122.15824)">
+						<g style="display:inline" id="g5176" transform="matrix(0.35277777,0,0,-0.35277777,58.484293,122.15824)">
 							<path d="M 0,0 11.21,4.557 0,9.674 v 5.37 L 18.28,5.895 V 2.785 L 0,-5.334 Z"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5178" />
 						</g>
 					</g>
 					<g id="g463">
-						<g style="display:inline" id="g5204"
-							transform="matrix(0.35277777,0,0,-0.35277777,32.86628,183.20844)">
+						<g style="display:inline" id="g5204" transform="matrix(0.35277777,0,0,-0.35277777,32.86628,183.20844)">
 							<path
 								d="m 0,0 c 0,-10.293 8.344,-18.636 18.636,-18.636 10.293,0 18.637,8.343 18.637,18.636 0,10.293 -8.344,18.637 -18.637,18.637 C 8.344,18.637 0,10.293 0,0"
 								style="fill:#eaa253;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5206" />
 						</g>
-						<g style="display:inline" id="g5208"
-							transform="matrix(0.35277777,0,0,-0.35277777,31.636108,183.20844)">
+						<g style="display:inline" id="g5208" transform="matrix(0.35277777,0,0,-0.35277777,31.636108,183.20844)">
 							<path
 								d="m 0,0 c 0,-10.293 8.344,-18.636 18.637,-18.636 10.292,0 18.636,8.343 18.636,18.636 0,10.293 -8.344,18.637 -18.636,18.637 C 8.344,18.637 0,10.293 0,0"
 								style="fill:#ffca75;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5210" />
 						</g>
-						<g style="display:inline" id="g5212"
-							transform="matrix(0.35277777,0,0,-0.35277777,36.267727,183.06144)">
+						<g style="display:inline" id="g5212" transform="matrix(0.35277777,0,0,-0.35277777,36.267727,183.06144)">
 							<path
 								d="m 0,0 c 0,2.273 0.332,4.401 0.997,6.382 0.665,1.982 1.623,3.719 2.876,5.212 H 6.511 C 5.318,9.981 4.405,8.173 3.77,6.17 3.135,4.167 2.818,2.119 2.818,0.026 c 0,-2.094 0.317,-4.122 0.952,-6.087 0.635,-1.964 1.54,-3.74 2.715,-5.327 H 3.873 C 2.612,-9.93 1.651,-8.227 0.991,-6.28 0.33,-4.333 0,-2.239 0,0"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5214" />
 						</g>
-						<g style="display:inline" id="g5216"
-							transform="matrix(0.35277777,0,0,-0.35277777,39.445373,185.04066)">
+						<g style="display:inline" id="g5216" transform="matrix(0.35277777,0,0,-0.35277777,39.445373,185.04066)">
 							<path
 								d="M 0,0 C 0,0.626 0.162,1.107 0.489,1.441 0.815,1.776 1.287,1.943 1.904,1.943 2.53,1.943 3.006,1.769 3.333,1.422 3.658,1.074 3.822,0.6 3.822,0 3.822,-0.609 3.656,-1.092 3.326,-1.448 2.996,-1.803 2.522,-1.982 1.904,-1.982 1.287,-1.982 0.815,-1.806 0.489,-1.454 0.162,-1.103 0,-0.618 0,0 m 0,10.989 c 0,1.295 0.635,1.943 1.904,1.943 0.644,0 1.124,-0.172 1.442,-0.514 0.316,-0.344 0.476,-0.82 0.476,-1.429 C 3.822,10.38 3.656,9.897 3.326,9.542 2.996,9.185 2.522,9.008 1.904,9.008 1.287,9.008 0.815,9.183 0.489,9.535 0.162,9.887 0,10.371 0,10.989"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5218" />
 						</g>
 					</g>
 					<g id="g397">
-						<g style="display:inline" id="g5220"
-							transform="matrix(0.35277777,0,0,-0.35277777,137.17893,159.05015)">
+						<g style="display:inline" id="g5220" transform="matrix(0.35277777,0,0,-0.35277777,137.17893,159.05015)">
 							<path
 								d="m 0,0 c 0,16.415 -13.307,29.723 -29.723,29.723 -16.415,0 -29.722,-13.308 -29.722,-29.723 0,-15.13 11.308,-27.611 25.933,-29.474 l 3.991,-12.691 h 4.637 l 4,13.779 C -8.785,-24.623 0,-13.337 0,0"
 								style="fill:#eaa253;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5222" />
 						</g>
-						<g style="display:inline" id="g5224"
-							transform="matrix(0.35277777,0,0,-0.35277777,135.54327,159.05015)">
+						<g style="display:inline" id="g5224" transform="matrix(0.35277777,0,0,-0.35277777,135.54327,159.05015)">
 							<path
 								d="m 0,0 c 0,16.415 -13.307,29.723 -29.723,29.723 -16.415,0 -29.722,-13.308 -29.722,-29.723 0,-15.13 11.308,-27.611 25.932,-29.474 l 8.629,-12.691 4,13.779 C -8.785,-24.623 0,-13.337 0,0"
 								style="fill:#ffca75;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5226" />
 						</g>
-						<g style="display:inline" id="g5228"
-							transform="matrix(0.35277777,0,0,-0.35277777,119.89317,158.39183)">
+						<g style="display:inline" id="g5228" transform="matrix(0.35277777,0,0,-0.35277777,119.89317,158.39183)">
 							<path
 								d="m 0,0 h 0.768 c 0.633,0 1.136,0.178 1.51,0.534 0.373,0.355 0.56,0.846 0.56,1.472 0,1.052 -0.583,1.579 -1.75,1.579 H 0 Z M 7.105,2.027 C 7.105,0.284 6.591,-1.061 5.564,-2.011 4.536,-2.961 3.076,-3.435 1.184,-3.435 H 0 V -8.609 H -4.214 V 6.988 h 5.398 c 1.97,0 3.45,-0.43 4.438,-1.291 0.989,-0.861 1.483,-2.084 1.483,-3.67"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5230" />
 						</g>
-						<g style="display:inline" id="g5232"
-							transform="matrix(0.35277777,0,0,-0.35277777,127.99249,161.42907)">
-							<path
-								d="M 0,0 H -4.235 V 6.358 H -9.132 V 0 h -4.236 v 15.597 h 4.236 V 9.815 h 4.897 v 5.782 H 0 Z"
+						<g style="display:inline" id="g5232" transform="matrix(0.35277777,0,0,-0.35277777,127.99249,161.42907)">
+							<path d="M 0,0 H -4.235 V 6.358 H -9.132 V 0 h -4.236 v 15.597 h 4.236 V 9.815 h 4.897 v 5.782 H 0 Z"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5234" />
 						</g>
-						<g style="display:inline" id="g5236"
-							transform="matrix(0.35277777,0,0,-0.35277777,130.66845,158.39183)">
+						<g style="display:inline" id="g5236" transform="matrix(0.35277777,0,0,-0.35277777,130.66845,158.39183)">
 							<path
 								d="m 0,0 h 0.768 c 0.633,0 1.136,0.178 1.51,0.534 0.373,0.355 0.56,0.846 0.56,1.472 0,1.052 -0.583,1.579 -1.75,1.579 H 0 Z M 7.105,2.027 C 7.105,0.284 6.591,-1.061 5.564,-2.011 4.536,-2.961 3.076,-3.435 1.184,-3.435 H 0 V -8.609 H -4.214 V 6.988 h 5.398 c 1.97,0 3.45,-0.43 4.438,-1.291 0.989,-0.861 1.483,-2.084 1.483,-3.67"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5238" />
 						</g>
 					</g>
 					<g id="g431">
-						<g style="display:inline" id="g5240"
-							transform="matrix(0.35277777,0,0,-0.35277777,89.752892,117.83124)">
+						<g style="display:inline" id="g5240" transform="matrix(0.35277777,0,0,-0.35277777,89.752892,117.83124)">
 							<path
 								d="m 0,0 h -33.758 c -2.644,0 -4.787,-2.143 -4.787,-4.787 v -33.758 c 0,-2.644 2.143,-4.787 4.787,-4.787 h 16.857 l 9.215,-12.24 h 4.871 v 12.24 H 0 c 2.644,0 4.787,2.143 4.787,4.787 V -4.787 C 4.787,-2.143 2.644,0 0,0"
 								style="fill:#eaa253;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5242" />
 						</g>
-						<g style="display:inline" id="g5244"
-							transform="matrix(0.35277777,0,0,-0.35277777,88.034476,117.83124)">
+						<g style="display:inline" id="g5244" transform="matrix(0.35277777,0,0,-0.35277777,88.034476,117.83124)">
 							<path
 								d="m 0,0 h -33.758 c -2.644,0 -4.787,-2.143 -4.787,-4.787 v -33.758 c 0,-2.644 2.143,-4.787 4.787,-4.787 h 16.857 l 14.086,-12.24 v 12.24 H 0 c 2.644,0 4.787,2.143 4.787,4.787 V -4.787 C 4.787,-2.143 2.644,0 0,0"
 								style="fill:#ffca75;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5246" />
 						</g>
-						<g style="display:inline" id="g5248"
-							transform="matrix(0.35277777,0,0,-0.35277777,87.477724,129.59419)">
+						<g style="display:inline" id="g5248" transform="matrix(0.35277777,0,0,-0.35277777,87.477724,129.59419)">
 							<path
 								d="m 0,0 c 1.007,-1.007 1.007,-2.641 0,-3.648 -1.007,-1.007 -2.641,-1.007 -3.648,0 l -7.181,7.181 c -1.008,1.008 -1.008,2.641 0,3.648 1.007,1.008 2.64,1.008 3.648,0 z"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5250" />
 						</g>
-						<g style="display:inline" id="g5252"
-							transform="matrix(0.35277777,0,0,-0.35277777,78.339368,121.74266)">
+						<g style="display:inline" id="g5252" transform="matrix(0.35277777,0,0,-0.35277777,78.339368,121.74266)">
 							<path
 								d="m 0,0 c -3.047,-3.047 -3.047,-8.004 0,-11.051 3.047,-3.047 8.004,-3.047 11.051,0 3.047,3.047 3.047,8.004 0,11.051 C 8.004,3.047 3.047,3.047 0,0 m 12.661,-12.661 c -3.935,-3.934 -10.336,-3.934 -14.27,0 -3.935,3.934 -3.935,10.336 0,14.27 3.934,3.935 10.335,3.935 14.269,0 3.935,-3.934 3.935,-10.335 10e-4,-14.27"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5254" />
 						</g>
-						<g style="display:inline" id="g5256"
-							transform="matrix(0.35277777,0,0,-0.35277777,85.566303,128.40184)">
+						<g style="display:inline" id="g5256" transform="matrix(0.35277777,0,0,-0.35277777,85.566303,128.40184)">
 							<path d="m 0,0 -1.609,-1.609 -7.826,7.825 1.61,1.609 z"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5258" />
 						</g>
 					</g>
 					<g id="g375">
-						<g style="display:inline" id="g5084-3"
-							transform="matrix(0.46887315,0,0,-0.35277777,172.96555,113.54641)">
+						<g style="display:inline" id="g5084-3" transform="matrix(0.46887315,0,0,-0.35277777,172.96555,113.54641)">
 							<path
 								d="m 0,0 h -78.205 c -5.627,0 -10.188,-4.561 -10.188,-10.188 v -47.995 c 0,-5.627 4.561,-10.188 10.188,-10.188 h 35.127 l -5.603,-20.67 h 5.603 l 22.347,20.67 H 0 c 5.627,0 10.188,4.561 10.188,10.188 v 47.995 C 10.188,-4.561 5.627,0 0,0"
 								style="fill:#a9aedb;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5086-2" />
 						</g>
-						<g style="display:inline" id="g5088-9"
-							transform="matrix(0.4688695,0,0,-0.35277777,170.3383,113.54641)">
+						<g style="display:inline" id="g5088-9" transform="matrix(0.4688695,0,0,-0.35277777,170.3383,113.54641)">
 							<path
 								d="m 0,0 h -78.205 c -5.627,0 -10.188,-4.561 -10.188,-10.188 v -47.995 c 0,-5.627 4.561,-10.188 10.188,-10.188 h 35.127 v -20.67 l 22.346,20.67 H 0 c 5.627,0 10.188,4.561 10.188,10.188 v 47.995 C 10.188,-4.561 5.627,0 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5090-4" />
 						</g>
-						<g aria-label="REACT" transform="matrix(0.24355054,0,0,0.25011174,24.010037,-2.8223153)"
-							id="flowRoot16534"
+						<g aria-label="REACT" transform="matrix(0.24355054,0,0,0.25011174,24.010037,-2.8223153)" id="flowRoot16534"
 							style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Dubai;-inkscape-font-specification:'Dubai, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#888df4;fill-opacity:1;stroke:none">
 							<path
 								d="m 460.06738,506.03014 q 0,-1.3125 -0.53906,-2.25 -0.53906,-0.9375 -1.85156,-1.47657 -0.91406,-0.375 -2.13281,-0.44531 -1.21875,-0.0937 -2.83594,-0.0937 h -3.25781 v 9.39844 h 2.76562 q 2.15625,0 3.60938,-0.21094 1.45312,-0.21094 2.4375,-0.96094 0.9375,-0.72656 1.35937,-1.59375 0.44531,-0.89062 0.44531,-2.36718 z m 14.03907,24.21093 h -10.99219 l -9.51563,-12.79687 h -4.14843 v 12.79687 h -8.95313 v -34.89843 h 15.09375 q 3.09375,0 5.32031,0.35156 2.22657,0.35156 4.17188,1.52344 1.96875,1.17187 3.11719,3.04687 1.17187,1.85156 1.17187,4.66406 0,3.86719 -1.80469,6.30469 -1.78125,2.4375 -5.10937,4.05469 z"
@@ -885,26 +800,22 @@
 							<path
 								d="m 563.87207,530.92076 q -3.89062,0 -7.19531,-1.14844 -3.28125,-1.14843 -5.64844,-3.42187 -2.36719,-2.27344 -3.67969,-5.67188 -1.28906,-3.39843 -1.28906,-7.85156 0,-4.14844 1.24219,-7.52344 1.24219,-3.375 3.60937,-5.78906 2.27344,-2.32031 5.625,-3.58594 3.375,-1.26562 7.35938,-1.26562 2.20312,0 3.96094,0.25781 1.78125,0.23438 3.28125,0.63281 1.57031,0.44532 2.83593,1.00782 1.28907,0.53906 2.25,1.00781 v 8.46094 h -1.03125 q -0.65625,-0.5625 -1.66406,-1.33594 -0.98437,-0.77344 -2.25,-1.52344 -1.28906,-0.75 -2.78906,-1.26562 -1.5,-0.51563 -3.21094,-0.51563 -1.89844,0 -3.60937,0.60938 -1.71094,0.58593 -3.16407,1.96875 -1.38281,1.33593 -2.25,3.53906 -0.84375,2.20312 -0.84375,5.34375 0,3.28125 0.91407,5.48437 0.9375,2.20313 2.34375,3.46875 1.42968,1.28907 3.1875,1.85157 1.75781,0.53906 3.46875,0.53906 1.64062,0 3.23437,-0.49219 1.61719,-0.49219 2.97656,-1.33594 1.14844,-0.67968 2.13282,-1.45312 0.98437,-0.77344 1.61718,-1.33594 h 0.9375 v 8.34375 q -1.3125,0.58594 -2.50781,1.10156 -1.19531,0.51563 -2.50781,0.89063 -1.71094,0.49219 -3.21094,0.75 -1.5,0.25781 -4.125,0.25781 z"
 								id="path403" />
-							<path
-								d="m 610.1377,502.09264 h -10.89844 v 28.14843 h -9 v -28.14843 h -10.89844 v -6.75 h 30.79688 z"
+							<path d="m 610.1377,502.09264 h -10.89844 v 28.14843 h -9 v -28.14843 h -10.89844 v -6.75 h 30.79688 z"
 								id="path405" />
 						</g>
 					</g>
 					<g id="g419">
-						<g style="display:inline" id="g5104"
-							transform="matrix(0.35277777,0,0,-0.35277777,96.25127,143.97176)">
+						<g style="display:inline" id="g5104" transform="matrix(0.35277777,0,0,-0.35277777,96.25127,143.97176)">
 							<path
 								d="m 0,0 h -69.176 c -4.977,0 -9.012,-4.035 -9.012,-9.012 v -42.453 c 0,-4.784 3.73,-8.686 8.439,-8.983 l -4.957,-16.907 h 4.957 l 18.246,16.878 H 0 c 4.977,0 9.012,4.034 9.012,9.012 V -9.012 C 9.012,-4.035 4.977,0 0,0"
 								style="fill:#a9aedb;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5106" />
 						</g>
-						<g style="display:inline" id="g5108"
-							transform="matrix(0.35277777,0,0,-0.35277777,94.502732,143.97176)">
+						<g style="display:inline" id="g5108" transform="matrix(0.35277777,0,0,-0.35277777,94.502732,143.97176)">
 							<path
 								d="m 0,0 h -69.176 c -4.977,0 -9.012,-4.035 -9.012,-9.012 v -42.453 c 0,-4.784 3.73,-8.686 8.439,-8.983 v -16.907 l 18.245,16.878 H 0 c 4.977,0 9.012,4.034 9.012,9.012 V -9.012 C 9.012,-4.035 4.977,0 0,0"
 								style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5110" />
 						</g>
-						<g aria-label="SQL " transform="matrix(0.26458333,0,0,0.26458333,-56.076506,18.620369)"
-							id="flowRoot16534-6"
+						<g aria-label="SQL " transform="matrix(0.26458333,0,0,0.26458333,-56.076506,18.620369)" id="flowRoot16534-6"
 							style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Dubai;-inkscape-font-specification:'Dubai, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#888df4;fill-opacity:1;stroke:none">
 							<path
 								d="m 503.21582,519.27232 q 0,5.15625 -4.38281,8.39063 -4.35938,3.21094 -11.85938,3.21094 -4.33593,0 -7.57031,-0.75 -3.21094,-0.77344 -6.02344,-1.94532 v -8.36718 h 0.98438 q 2.78906,2.22656 6.23437,3.42187 3.46875,1.19531 6.65625,1.19531 0.82032,0 2.15625,-0.14062 1.33594,-0.14063 2.17969,-0.46875 1.03125,-0.42188 1.6875,-1.05469 0.67969,-0.63281 0.67969,-1.875 0,-1.14844 -0.98438,-1.96875 -0.96093,-0.84375 -2.83593,-1.28906 -1.96875,-0.46875 -4.17188,-0.86719 -2.17969,-0.42187 -4.10156,-1.05469 -4.40625,-1.42968 -6.35156,-3.86718 -1.92188,-2.46094 -1.92188,-6.09375 0,-4.875 4.35938,-7.94532 4.38281,-3.09375 11.25,-3.09375 3.44531,0 6.79687,0.67969 3.375,0.65625 5.83594,1.66406 v 8.03907 h -0.96094 q -2.10937,-1.6875 -5.17969,-2.8125 -3.04687,-1.14844 -6.23437,-1.14844 -1.125,0 -2.25,0.16406 -1.10156,0.14063 -2.13281,0.5625 -0.91407,0.35156 -1.57032,1.07813 -0.65625,0.70312 -0.65625,1.61718 0,1.38282 1.05469,2.13282 1.05469,0.72656 3.98438,1.33593 1.92187,0.39844 3.67968,0.77344 1.78125,0.375 3.82032,1.03125 4.00781,1.3125 5.90625,3.58594 1.92187,2.25 1.92187,5.85937 z"
@@ -912,19 +823,16 @@
 							<path
 								d="m 531.3877,521.63951 q 1.3125,-1.59375 1.94531,-3.75 0.63281,-2.17969 0.63281,-5.10937 0,-3.14063 -0.72656,-5.34375 -0.72656,-2.20313 -1.89844,-3.5625 -1.19531,-1.40625 -2.76562,-2.03907 -1.54688,-0.63281 -3.23438,-0.63281 -1.71094,0 -3.23437,0.60938 -1.5,0.60937 -2.76563,2.01562 -1.17187,1.3125 -1.92187,3.63281 -0.72657,2.29688 -0.72657,5.34375 0,3.11719 0.70313,5.32032 0.72656,2.17968 1.89844,3.5625 1.17187,1.38281 2.74218,2.03906 1.57032,0.65625 3.30469,0.65625 1.73438,0 3.30469,-0.65625 1.57031,-0.67969 2.74219,-2.08594 z m 0.96093,8.17969 q 0.0937,2.32031 1.26563,3.32812 1.17187,1.00782 4.00781,1.00782 0.96094,0 2.27344,-0.32813 1.3125,-0.32812 1.82812,-0.58594 h 0.89063 v 6.1875 q -1.3125,0.30469 -2.85938,0.53907 -1.52343,0.23437 -4.6875,0.23437 -2.78906,0 -4.875,-0.70312 -2.0625,-0.67969 -3.44531,-1.94532 -1.35937,-1.24218 -2.03906,-2.92968 -0.67969,-1.6875 -0.79688,-3.75 -7.82812,-0.44532 -12.21093,-5.22657 -4.35938,-4.80468 -4.35938,-12.84375 0,-8.41406 4.78125,-13.28906 4.78125,-4.89844 13.19531,-4.89844 8.39063,0 13.19532,4.89844 4.80468,4.875 4.80468,13.28906 0,6.21094 -2.8125,10.73438 -2.8125,4.5 -8.15625,6.28125 z"
 								id="path392" />
-							<path d="m 575.35645,530.24107 h -25.17188 v -34.89843 h 9 v 28.14843 h 16.17188 z"
-								id="path394" />
+							<path d="m 575.35645,530.24107 h -25.17188 v -34.89843 h 9 v 28.14843 h 16.17188 z" id="path394" />
 						</g>
 					</g>
 					<g id="g385">
-						<g style="display:inline" id="g5180-7"
-							transform="matrix(0.35277777,0,0,-0.35277777,164.12339,165.50592)">
+						<g style="display:inline" id="g5180-7" transform="matrix(0.35277777,0,0,-0.35277777,164.12339,165.50592)">
 							<path
 								d="m 0,0 h -48.564 c -3.804,0 -6.887,-3.083 -6.887,-6.887 v -29.08 c 0,-3.803 3.083,-6.886 6.887,-6.886 l -2.96,-13.685 h 5.196 l 14.793,13.685 H 0 c 3.803,0 6.887,3.083 6.887,6.886 v 29.08 C 6.887,-3.083 3.803,0 0,0"
 								style="fill:#2a2a5a;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5182-4" />
 						</g>
-						<g style="display:inline" id="g5184-2"
-							transform="matrix(0.35277777,0,0,-0.35277777,162.29043,165.50592)">
+						<g style="display:inline" id="g5184-2" transform="matrix(0.35277777,0,0,-0.35277777,162.29043,165.50592)">
 							<path
 								d="m 0,0 h -48.564 c -3.804,0 -6.887,-3.083 -6.887,-6.887 v -29.08 c 0,-3.803 3.083,-6.886 6.887,-6.886 h 2.235 v -13.685 l 14.794,13.685 H 0 c 3.803,0 6.887,3.083 6.887,6.886 v 29.08 C 6.887,-3.083 3.803,0 0,0"
 								style="fill:#3f3e76;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path5186-9" />
@@ -938,346 +846,14 @@
 							<path
 								d="m 533.93457,520.50955 h -15.89583 v -4.8125 h 4.44791 v -17.51823 h -4.44791 v -4.8125 h 15.89583 v 4.8125 h -4.44792 v 17.51823 h 4.44792 z"
 								id="path385" />
-							<path
-								d="m 560.87728,498.61632 h -8.47657 v 21.89323 h -7 v -21.89323 h -8.47656 v -5.25 h 23.95313 z"
+							<path d="m 560.87728,498.61632 h -8.47657 v 21.89323 h -7 v -21.89323 h -8.47656 v -5.25 h 23.95313 z"
 								id="path387" />
 						</g>
 					</g>
 				</g>
 			</svg>
 		</div>
-		<!--Hero Text Col 2nd Row-->
-		<div class="flex flex-col w-full h-full justify-around items-start text-center md:text-left">
-			<p class="leading-normal text-2xl mb-2">Using different tools to solve user's problems, striving to
-				provide a satisfying service to both clients and employer!
-			</p>
-			<a href="#contact" id="cta"
-				class="mx-auto lg:mx-0 hover:underline uppercase bg-white text-blue-500 font-bold rounded-full my-6 py-2 px-8 shadow-lg">
-				Get in touch!</a>
-		</div>
 	</div>
-
-	<!-- waves SVG -->
-	<div class="relative -mt-12 lg:-mt-24 pointer-events-none">
-		<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-					<path
-						d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-						opacity="0.100000001"></path>
-					<path
-						d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-						opacity="0.100000001"></path>
-					<path
-						d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-						id="Path-4" opacity="0.200000003"></path>
-				</g>
-				<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-					<path
-						d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
-					</path>
-				</g>
-			</g>
-		</svg>
-	</div>
-
-	<!-- #SKILLS -->
-	<section class="bg-white border-b py-8" id="skills">
-		<div class="container mx-auto flex flex-wrap pt-4 pb-12">
-
-			<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Skills</h2>
-			<div class="w-full mb-4">
-				<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-			</div>
-			<!-- Programming Lenguages Col -->
-			<div id="card-programming" class="card w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
-				<div class="bg-white rounded-t rounded-b-none overflow-hidden shadow">
-					<div class="w-full font-bold text-2xl gradient text-white px-6 py-3">Programming</div>
-				</div>
-				<div id="programming" style="background: url(/img/bg-programming.jpeg) #f3f3f3; background-size: cover;"
-					class="flex-none bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 h-auto">
-					<div class="flex flex-col items-center">
-						<img class="my-2" alt="html badge"
-							src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
-						<img class="my-2" alt="css badge"
-							src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
-						<img class="my-2" alt="javascript badge "
-							src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
-						<img class="my-2" alt="php badge "
-							src="https://img.shields.io/badge/php-%23777BB4.svg?&style=for-the-badge&logo=php&logoColor=white" />
-						<img class="my-2" alt="mysql badge "
-							src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
-						<img class="my-2" alt="java badge "
-							src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white" />
-						<!-- <img class="my-2" alt="c++ badge "
-							src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white" /> -->
-					</div>
-				</div>
-			</div>
-			<!-- Frameworks and Libraries Col -->
-			<div id="card-frameworks" class="card w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
-				<div class="bg-white rounded-t rounded-b-none overflow-hidden shadow">
-					<div class="w-full font-bold text-2xl gradient text-white px-6 py-3">Frameworks</div>
-				</div>
-				<div id="frameworks" style="background: url(/img/bg-frameworks.jpeg) #f3f3f3; background-size: cover;"
-					class="flex-none bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 h-auto">
-					<div class="flex flex-col items-center">
-						<img class="my-2" alt="react badge"
-							src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-						<img class="my-2" alt="redux badge"
-							src="https://img.shields.io/badge/redux%20-%23593d88.svg?&style=for-the-badge&logo=redux&logoColor=white" />
-						<img class="my-2" alt="laravel badge"
-							src="https://img.shields.io/badge/laravel%20-%23FF2D20.svg?&style=for-the-badge&logo=laravel&logoColor=white" />
-						<img class="my-2" alt="jquery badge"
-							src="https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white" />
-						<img class="my-2" alt="tailwindcss badge"
-							src="https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=for-the-badge&logo=tailwind-css&logoColor=white" />
-						<img class="my-2" alt="bootstrap badge"
-							src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white" />
-						<!-- <img class="my-2" alt="angularjs badge"
-							src="https://img.shields.io/badge/angular.js%20-%23E23237.svg?&style=for-the-badge&logo=angularjs&logoColor=white" /> -->
-					</div>
-				</div>
-			</div>
-			<!-- Other Skills Col -->
-			<div id="card-other" class="card w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink text-center">
-				<div class="bg-white rounded-t rounded-b-none overflow-hidden shadow">
-					<div class="w-full font-bold text-2xl gradient text-white px-6 py-3">Other</div>
-				</div>
-				<div id="other" style="background: url(/img/bg-other.jpeg) #f3f3f3; background-size: cover;"
-					class="flex-none bg-white rounded-b rounded-t-none overflow-hidden shadow p-6 h-auto">
-					<div class="flex flex-col items-center">
-						<img class="my-2" alt="git badge"
-							src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white" />
-						<img class="my-2" alt="linux badge"
-							src="https://img.shields.io/badge/linux%20-%23FFCF1E.svg?&style=for-the-badge&logo=linux&logoColor=black" />
-						<img class="my-2" alt="npm badge"
-							src="https://img.shields.io/badge/npm%20-%23CC3534.svg?&style=for-the-badge&logo=npm&logoColor=white" />
-						<img class="my-2" alt="api rest badge"
-							src="https://img.shields.io/badge/API-REST%20-%2338B2AC.svg?&style=for-the-badge&logo=database&logoColor=white" />
-						<img class="my-2" alt="sass badge"
-							src="https://img.shields.io/badge/SASS%20-hotpink.svg?&style=for-the-badge&logo=SASS&logoColor=white" />
-						<img class="my-2" alt="react testing library badge"
-							src="https://img.shields.io/badge/react-testinglibrary%20-%2361DAFB.svg?&style=for-the-badge&logo=react&logoColor=white" />
-						<!-- <img class="my-2" alt="docker badge"
-							src="https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white" /> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- #PORTFOLIO -->
-	<section class="bg-gray-100 py-8 text-gray-800 border-b overflow-x-hidden w-screen" id="portfolio">
-		<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-			<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Portfolio</h2>
-			<div class="w-full mb-4">
-				<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-			</div>
-			<p class="tracking-loose text-lg w-full text-center mb-4 mt-2">Since my years of professional experience
-				were under an NDA with the companies, I created a simple website as proof of skills.
-			</p>
-			<div id="proyect1"
-				class="flex flex-col-reverse bg-white p-2 rounded-lg shadow-lg md:flex-row md:bg-transparent md:p-0 md:shadow-none">
-				<!--Project Text Col-->
-				<div
-					class="left-col flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-right">
-					<h2 class="w-full my-4 text-3xl font-bold leading-tight text-center md:text-right">Movies & Series
-					</h2>
-					<p class="w-full leading-normal text-xl">Be able to search for information on any movie, tv show or
-						person in the film industry.
-					</p>
-					<p class="leading-normal text-xl mb-8 w-full">Also, get updated recommendations on tv shows and
-						movies!</p>
-					<!-- tecnology tags -->
-					<div>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							react
-						</span>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							redux
-						</span>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							tailwindcss
-						</span>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							tmdb api
-						</span>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							netlify
-						</span>
-						<span
-							class="inline-block bg-gray-400 text-gray-800 text-xs rounded-full mx-1 px-2 uppercase font-semibold tracking-wide">
-							react-testing-library
-						</span>
-					</div>
-					<!-- button group -->
-					<div class="container flex justify-around md:justify-end text-center">
-						<a href="https://github.com/Leandro-Suero/portfolio-movies-react" target="_blank"
-							rel="noopener noreferrer"
-							class="hover:underline uppercase text-gray-100 font-semibold rounded-full my-6 py-2 px-8 shadow-lg bg-black md:mr-2">
-							<span class="fab fa-github font-normal"></span>&nbsp;&nbsp;View Code</a>
-						<a href="https://moviseries.netlify.app/" target="_blank" rel="noopener noreferrer"
-							class="hover:underline uppercase text-gray-800 font-bold rounded-full my-6 py-2 px-8 shadow-lg bg-myorange">
-							<span class="fas fa-external-link-alt"></span>&nbsp;View Demo</a>
-					</div>
-				</div>
-				<!--Project Image Col-->
-				<div class="right-col w-full md:w-3/5 py-6 flex justify-center">
-					<img src="/img/Moviseries.png" alt="Movies and series">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- #ABOUT -->
-	<section class="bg-white py-8 text-gray-800 overflow-x-hidden w-screen" id="about">
-		<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-			<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">About me</h2>
-			<div class="w-full mb-4">
-				<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-			</div>
-
-			<div class="flex flex-col md:flex-row">
-				<!--About Image Col-->
-				<div class="left-col w-full md:w-7/12 py-6 flex justify-center">
-					<img class="w-full md:w-4/5 object-contain" src="/img/hello.png">
-				</div>
-				<!--About Text Col-->
-				<div class="right-col flex flex-col w-full md:w-5/12 justify-center items-start">
-					<h3 class="w-full mt-4 text-3xl font-bold leading-tight"><span class="text-myred">Hola</span>,
-					</h3>
-					<h3 class="w-full mb-4 text-3xl font-bold leading-tight">I'm <span class="text-myred">Leandro
-							Suero</span>.
-					</h3>
-					<p class="w-full leading-normal text-xl mb-1">I'm a positive and easy going person who tries to do
-						everything with a smile, sharing what I know and leaving things a bit better than they were
-						before.
-					</p>
-					<p class="leading-normal text-xl w-full mb-1">I look at the continuous evolution of the web as a
-						challenge and as a constant reminder on how we can learn something new everyday.</p>
-					<p class="leading-normal text-xl w-full mb-1">It's awesome to fit moving pieces into place and watch
-						how everything works togheter.</p>
-					<p class="leading-normal text-xl w-full mb-1">I can work and learn on my own but I'm not afraid to
-						ask for help if I need it, I don't claim to have all the answers.</p>
-					<p class="leading-normal text-xl w-full mb-1">A quote I like very much is:</p>
-					<div class="my-1 mx-auto">
-						<p class="leading-normal text-xl w-full text-gray-500 text-center italic">
-							"A goal without a plan is only a wish"</p>
-						<p class="leading-normal text-base w-full text-gray-500 text-right">
-							Antoine de Saint-Exupéry.</p>
-					</div>
-					<!-- button group -->
-					<div class="container flex justify-around md:justify-center">
-						<a href="https://github.com/Leandro-Suero" target="_blank" rel="noopener noreferrer"
-							class="hover:underline uppercase text-gray-100 font-semibold rounded-full my-6 py-2 px-8 shadow-lg bg-black md:mr-2">
-							<span class="fab fa-github font-normal"></span>&nbsp;&nbsp;Github</a>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-							class="hover:underline uppercase text-gray-100 font-semibold rounded-full my-6 py-2 px-8 shadow-lg bg-blue-600">
-							<span class="fab fa-linkedin font-normal"></span>&nbsp;LinkedIn</a>
-					</div>
-				</div>
-
-	</section>
-
-	<svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
-		xmlns:xlink="http://www.w3.org/1999/xlink">
-		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			<g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-				<g class="wave" fill="#ffffff">
-					<path
-						d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
-					</path>
-				</g>
-				<g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-					<g
-						transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-						<path
-							d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-							opacity="0.100000001"></path>
-						<path
-							d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-							opacity="0.100000001"></path>
-						<path
-							d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-							opacity="0.200000003"></path>
-					</g>
-				</g>
-			</g>
-		</g>
-	</svg>
-
-	<!-- #CONTACT -->
-	<section class="container mx-auto text-center py-6" id="contact">
-
-		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Contact me</h2>
-		<div class="w-full mb-4">
-			<div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-		</div>
-		<!-- CONTACT FORM -->
-		<div class="w-11/12 mx-auto">
-			<form action="https://formspree.io/xyybgqae" method="POST" class="w-full max-w-lg mx-auto">
-				<div class="flex flex-wrap -mx-3 mb-3">
-					<div class="w-full px-3">
-						<label class="block uppercase tracking-wide text-gray-800 text-xs font-bold mb-2"
-							for="grid-contact-name">
-							Contact Name
-						</label>
-						<input
-							class="appearance-none block w-full bg-gray-200 text-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-							id="grid-contact-name" type="text" placeholder="John Doe" name="name" required>
-					</div>
-				</div>
-				<div class="flex flex-wrap -mx-3 mb-3">
-					<div class="w-full px-3">
-						<label class="block uppercase tracking-wide text-gray-800 text-xs font-bold mb-2"
-							for="grid-password">
-							E-mail
-						</label>
-						<input
-							class="appearance-none block w-full bg-gray-200 text-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-							id="email" type="email" placeholder="johndoe@gmail.com" name="_replyto" required>
-					</div>
-				</div>
-				<div class="flex flex-wrap -mx-3 mb-3">
-					<div class="w-full px-3">
-						<label class="block uppercase tracking-wide text-gray-800 text-xs font-bold mb-2"
-							for="grid-password">
-							Message
-						</label>
-						<textarea
-							class="resize-y appearance-none block w-full bg-gray-200 text-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-							id="message" name="message" required
-							placeholder="We loved you profile and would like to arrange an interview with you!"></textarea>
-					</div>
-				</div>
-				<div class=" mx-auto">
-					<button type="submit"
-						class="uppercase mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-semibold rounded-full my-4 py-2 px-8 shadow-lg">
-						Send</button>
-				</div>
-			</form>
-		</div>
-	</section>
-
-	<!--Footer-->
-	<footer class="bg-white w-full">
-		<div class="container flex flex-col justify-center mx-auto w-full p-4 text-center text-gray-400">
-			<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 55 23">
-				<text id="small_brand" data-name="Texto Corto Centrado" transform="translate(0 18)" fill="currentColor"
-					font-size="20" font-family="Consolas">
-					<tspan x="0" y="0">{L·S}</tspan>
-				</text>
-			</svg>
-			<span class="text-gray-500">Santa Fe, Argentina - 2020</span>
-		</div>
-	</footer>
 
 	<script src="./js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
