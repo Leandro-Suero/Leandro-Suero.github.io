@@ -1,0 +1,28 @@
+{
+	"name": "Leandro Suero's website",
+	"short_name": "Leandro Suero",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#F9D423",
+	"theme_color": "#F9D423",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/img/pwa192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/img/pwa521.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	]
+}
