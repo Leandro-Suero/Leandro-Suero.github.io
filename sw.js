@@ -39,10 +39,12 @@ const limitCacheSize = (name, size) => {
 //install service worker
 self.addEventListener("install", (evt) => {
   console.log("service worker has been installed");
-  caches.open(staticCacheName).then((cache) => {
-    console.log("caching assets");
-    cache.addAll(assets);
-  });
+  evt.waitUntil(
+    caches.open(staticCacheName).then((cache) => {
+      console.log("caching assets");
+      return cache.addAll(assets);
+    })
+  );
 });
 
 //activate service worker
