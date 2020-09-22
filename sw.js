@@ -55,26 +55,37 @@ self.addEventListener("activate", (evt) => {
 //fetch event
 self.addEventListener("fetch", (evt) => {
   //console.log("fetch event", evt);
-  evt.respondWith(
-    caches
-      .match(evt.request)
-      .then((cacheRes) => {
-        //console.log("cache", cacheRes);
-        return (
-          cacheRes ||
-          fetch(evt.request).then((fetchRes) => {
-            return caches.open(dynamicCacheName).then((cache) => {
-              cache.put(evt.request.url, fetchRes.clone());
-              limitCacheSize(dynamicCacheName, 50);
-              return fetchRes;
-            });
-          })
-        );
-      })
-      .catch(() => {
-        if (evt.request.url.indexOf(".html") > -1) {
-          return caches.match("/fallback.html"); //default if no conection
-        }
-      })
-  );
+  //urls with the protocol/request scheme chrome-extension:// are not allowed in service worker
+  if (evt.request.url.indexOf("http") === 0) {
+    evt.respondWith(
+      caches
+        .match(evt.request)
+        .then((cacheRes) => {
+          // console.log("cache", cacheRes);
+          return (
+            cacheRes ||
+            fetch(evt.request).then((fetchRes) => {
+              return caches
+                .open(dynamicCacheName)
+                .then((cache) => {
+                  cache.put(evt.request.url, fetchRes.clone());
+                  limitCacheSize(dynamicCacheName, 50);
+                  return fetchRes;
+                })
+                .catch((error) => {
+                  console.error(
+                    "There has been a problem with your fetch operation:",
+                    error
+                  );
+                });
+            })
+          );
+        })
+        .catch(() => {
+          if (evt.request.url.indexOf(".html") > -1) {
+            return caches.match("/fallback.html"); //default if no conection
+          }
+        })
+    );
+  }
 });
