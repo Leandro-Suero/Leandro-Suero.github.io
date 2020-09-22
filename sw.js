@@ -11,6 +11,7 @@ const assets = [
   "/manifest.json",
   "https://use.fontawesome.com/releases/v5.3.1/css/all.css",
   "https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.woff2",
+  "https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff2",
   "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700",
   "https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2",
   "https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2",
@@ -21,6 +22,8 @@ const assets = [
   "/img/bg-programming.jpeg",
   "/img/Moviseries.png",
   "/img/hello.png",
+  "/img/pwa192.png",
+  "/img/pwa512.png",
 ];
 
 const limitCacheSize = (name, size) => {
