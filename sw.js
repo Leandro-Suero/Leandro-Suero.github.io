@@ -28,7 +28,7 @@ const assets = [
 
 const limitCacheSize = (name, size) => {
   caches.open(name).then((cache) => {
-    cache.keys.then((keys) => {
+    cache.keys().then((keys) => {
       if (keys.lenght > size) {
         cache.delete(keys[0]).then(limitCacheSize(name, size));
       }
