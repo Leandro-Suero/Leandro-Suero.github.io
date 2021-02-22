@@ -99,6 +99,29 @@ ScrollTrigger.matchMedia({
       duration: 0.5,
       ease: "power2",
     });
+    /* PORTFOLIO SECTION ANIMATION */
+    gsap.from("#proyect2 .left-col", {
+      scrollTrigger: {
+        trigger: "#proyect2",
+        start: "top 75%",
+        end: "top 75%",
+      },
+      x: "-100%",
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2",
+    });
+    gsap.from("#proyect2 .right-col", {
+      scrollTrigger: {
+        trigger: "#proyect2",
+        start: "top 75%",
+        end: "top 75%",
+      },
+      x: "80%",
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2",
+    });
 
     /* ABOUT SECTION ANIMATION */
     gsap.from("#about .left-col", {
