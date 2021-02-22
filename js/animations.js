@@ -161,6 +161,17 @@ ScrollTrigger.matchMedia({
       duration: 0.5,
       ease: "power2",
     });
+    gsap.from("#proyect2 .left-col img", {
+      scrollTrigger: {
+        trigger: "#proyect2 .left-col",
+        start: "top 75%",
+        end: "top 75%",
+      },
+      scale: 0,
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2",
+    });
     // gsap.from("#proyect1 .left-col", {
     //   scrollTrigger: {
     //     trigger: "#proyect1 h2",
@@ -247,6 +258,18 @@ ScrollTrigger.matchMedia({
     gsap.from("#proyect1 .left-col a", {
       scrollTrigger: {
         trigger: "#proyect1 .left-col a",
+        start: "bottom 95%",
+        end: "bottom 95%",
+      },
+      scale: 0,
+      opacity: 0,
+      transformOrigin: "center",
+      duration: 0.3,
+      ease: "power2",
+    });
+    gsap.from("#proyect2 .right-col a", {
+      scrollTrigger: {
+        trigger: "#proyect2 .right-col a",
         start: "bottom 95%",
         end: "bottom 95%",
       },
